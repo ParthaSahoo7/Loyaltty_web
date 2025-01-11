@@ -9,10 +9,10 @@ export function TestimonialCard({ logo, quote, avatar, name, role, variant = 'wh
       name: 'text-neutral-800'
     },
     blue: {
-      bg: 'bg-blue-400',
+      bg: 'bg-[#040869]',
       text: 'text-white',
       border: 'border-white',
-      name: 'text-sky-900'
+      name: 'text-white'
     }
   };
 
@@ -28,10 +28,10 @@ export function TestimonialCard({ logo, quote, avatar, name, role, variant = 'wh
           {quote}
         </blockquote>
       </div>
-      <footer className="flex gap-10 mt-16 max-w-full w-[383px]">
+      <footer className="flex gap-3 mt-16 max-w-full w-[383px]">
         <img src={avatar} alt="" className="object-contain shrink-0 self-end rounded-full aspect-square w-[95px]" />
         <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px]">
-          <cite className={`text-2xl font-semibold ${currentStyle.name} not-italic`}>{name}</cite>
+          <cite className={`text-2xl font-semibold ${currentStyle.name}  not-italic `}>{name}</cite>
           <span className={`mt-4 text-base tracking-tight leading-5 ${currentStyle.text}`}>
             {role}
           </span>

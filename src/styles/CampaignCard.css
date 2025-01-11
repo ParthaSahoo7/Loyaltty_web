@@ -1,0 +1,19 @@
+.slick-slide {
+  padding: 0 10px; /* Horizontal spacing between slides */
+}
+
+.slick-list {
+  margin: 0 20px; /* Adjust container margin to compensate for slide padding */
+}
+
+.carousel-slide {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.carousel-slide:hover {
+  transform: scale(1.05); /* Add a hover effect for interactivity */
+}

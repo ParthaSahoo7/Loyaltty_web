@@ -1,12 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function NavItem({ label, hasDropdown }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      navigate('/coming-soon');
+  };
+
   return (
     <div className="flex gap-2.5 items-center">
       <button 
-        className="self-stretch my-auto text-lg font-medium leading-none text-white hover:text-amber-200 transition-colors"
+        className="self-stretch my-auto text-lg font-medium leading-none text-[#040869] hover:text-amber-200 transition-colors"
         aria-expanded={hasDropdown ? "false" : undefined}
         aria-haspopup={hasDropdown ? "true" : undefined}
+        onClick={handleClick}
       >
         {label}
       </button>

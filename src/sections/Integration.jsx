@@ -3,7 +3,7 @@ import { Button } from '../shared/Button';
 
 export function Integration() {
   return (
-    <section className="flex flex-wrap items-center py-36 pr-56 pl-56 bg-sky-900 max-md:px-5 max-md:py-24">
+    <section className="flex flex-wrap items-center py-36 pr-56 pl-56 bg-[#040869] max-md:px-5 max-md:py-24">
       <div className="flex flex-col flex-1 shrink self-stretch my-auto basis-0 min-w-[240px] max-md:max-w-full">
         <div className="flex flex-col w-full text-white max-md:max-w-full">
           <h2 className="text-7xl font-bold tracking-tighter max-md:text-4xl">

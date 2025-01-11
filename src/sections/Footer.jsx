@@ -1,17 +1,24 @@
 import React from 'react';
 import { Button } from '../shared/Button';
+import logo from '../logoBrand.png';
 
 export function Footer() {
   return (
-    <footer className="bg-sky-900 text-white py-36 px-56 max-md:px-5 max-md:py-24">
-      <div className="flex flex-wrap gap-10 justify-between max-w-[1480px] mx-auto">
+    <footer className="bg-[#040869] text-white py-3 px-8 max-md:px-5 max-md:py-24">
+      <div className="flex flex-wrap p-4 gap-8 justify-between max-w-[1480px] mx-auto">
         <div className="flex flex-col flex-1 min-w-[240px]">
-          <div className="flex gap-2.5 text-3xl font-bold">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f83279e840033e52fb82d1df6222417e75192311c028391dd9eae418da9963bb?placeholderIfAbsent=true&apiKey=f3c35435213d4b1083f43d09f2cabdc0" alt="" className="w-[37px] aspect-[1.28]" aria-hidden="true" />
+          <div className="flex  gap-2.5 text-3xl font-bold">
+            <img src={logo} alt="" className="w-[37px] aspect-[1.28]" aria-hidden="true" />
             <span>Loyaltty</span>
           </div>
           <p className="mt-4 text-lg tracking-tight leading-8 text-stone-100">
-            Loyaltty was created for the new ways we live and work. We make a better workspace around the world
+            Address:
+          </p>
+          <p className=" text-xs tracking-tight leading-8  text-stone-100">
+          Headquarter: 30N Gould St Ste N Sheriden, WY 82801<br></br>
+Canada: 19 Grand Trunk Crescent, Toronto, M5J 3A3<br></br>
+Australia: Parramatta NSW 2150, Australia<br></br>
+India: Patia, Bhubaneswar, Odisha, India, 751024
           </p>
         </div>
         
@@ -31,7 +38,7 @@ export function Footer() {
         <div className="flex flex-col min-w-[240px] w-[259px]">
           <h3 className="text-3xl font-bold">Try It Today</h3>
           <p className="mt-6 text-base leading-5">
-            Get started for free. Add your whole team as your needs grow.
+            Get started for free. 
           </p>
           <Button className="mt-6">
             Start today
@@ -40,14 +47,15 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-10 justify-between items-center mt-24 pt-8 border-t border-slate-600">
+      <div className="flex flex-wrap gap-10 justify-between items-center mt-2 pt-8 border-t border-slate-600">
         <div className="flex flex-wrap gap-10 items-center">
           <button className="flex items-center gap-1.5">
             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7d6ef3bb144c7916252f11b3e6db25b9ed4e8cec6e285e57d092c363232f3e7?placeholderIfAbsent=true&apiKey=f3c35435213d4b1083f43d09f2cabdc0" alt="" className="w-[19px] aspect-square" aria-hidden="true" />
             <span>English</span>
             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9115f91244c06357a808514de37a07a2b9641a79bb70ab20be339b235acee75d?placeholderIfAbsent=true&apiKey=f3c35435213d4b1083f43d09f2cabdc0" alt="" className="w-3 aspect-[2]" aria-hidden="true" />
           </button>
-          <a href="#" className="hover:text-amber-200 transition-colors">Terms & privacy</a>
+          <a href="/terms-and-conditions" className="hover:text-amber-200 transition-colors">Terms & Conditions</a>
+          <a href="/privacy-policy" className="hover:text-amber-200 transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-amber-200 transition-colors">Security</a>
           <a href="#" className="hover:text-amber-200 transition-colors">Status</a>
           <span>©2024 Loyaltty LLC.</span>
